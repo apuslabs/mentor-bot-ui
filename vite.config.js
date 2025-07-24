@@ -19,7 +19,10 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: [
-      '@arweave-wallet-kit/react',
+      '@arweave-wallet-kit/react'
+    ],
+    // Exclude the wallet strategies from pre-bundling since they're dynamically imported
+    exclude: [
       '@arweave-wallet-kit/wander-strategy',
       '@arweave-wallet-kit/browser-wallet-strategy',
       '@arweave-wallet-kit/webwallet-strategy'
