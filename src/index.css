@@ -20,3 +20,51 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
+/* 在现有样式后添加钱包组件的基本样式 */
+
+/* Arweave Wallet Kit 基本样式 */
+.arweave-wallet-kit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.arweave-wallet-kit-modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.arweave-wallet-kit-wallet-option {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.arweave-wallet-kit-wallet-option:hover {
+  background-color: #f5f5f5;
+}
+
+.arweave-wallet-kit-wallet-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
